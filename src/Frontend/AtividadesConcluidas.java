@@ -194,7 +194,7 @@ public class AtividadesConcluidas extends javax.swing.JFrame {
         }
         int i = 0;
         for (Atividade f : main.atividades) {
-            if (f.getStatus() == 'c') {
+            if (f.getStatus() == 'c' && funcoes.Usuario_atual.equals(f.getNomeUser())) {
                 model.addRow(new Vector());
                 model.setValueAt(f.getNome(), i, 0);
                 int yeear = f.getData().getYear() + 1900;
