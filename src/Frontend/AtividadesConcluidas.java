@@ -198,7 +198,7 @@ public class AtividadesConcluidas extends javax.swing.JFrame {
                 model.addRow(new Vector());
                 model.setValueAt(f.getNome(), i, 0);
                 int yeear = f.getData().getYear() + 1900;
-                model.setValueAt(f.getData().getDate() + "/" + f.getData().getMonth() + "/" + yeear, i, 1);
+                model.setValueAt(f.getData().getDate() + "/" + (f.getData().getMonth()+1) + "/" + yeear, i, 1);
                 i++;
             }
         }
